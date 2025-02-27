@@ -59,10 +59,6 @@ def test(cel):
 
 
 
-
-
-
-
 text =  open("INPUT.TXT", "r").read().split("\n")
 if text[-1] == "":
     del(text[-1])
