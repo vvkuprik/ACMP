@@ -1,13 +1,13 @@
-text =  open("INPUT.TXT", "r").read().split("\n")
-numer = text[0].split(" ")
+text = open("INPUT.TXT", "r").read().split("\n")
 
-for i in range(3):
-    numer[i] = int(numer[i])
-
-
-mn = min(numer)
-mx = max(numer)
+a1 = int(text[0])
+a2 = int(text[1])
 
 file = open("OUTPUT.TXT", "w")
-file.write(str(mx - mn))
+if a1 > a2:
+    file.write(">")
+elif a1 < a2:
+    file.write("<")
+else:
+    file.write("=")
 file.close()
